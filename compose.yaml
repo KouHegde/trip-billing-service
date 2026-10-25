@@ -1,0 +1,10 @@
+name: trip-billing-service
+services:
+  postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: invoice
+      POSTGRES_USER: invoice
+      POSTGRES_PASSWORD: invoice
+    ports:
+      - "5432"
